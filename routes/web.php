@@ -24,6 +24,10 @@ Route::get('/danh-sach-san-pham',
 Route::get('/create',
 [\App\Http\Controllers\ProductController::class,
     'create']);
+// Route submit form create
+Route::post('/store',
+[\App\Http\Controllers\ProductController::class,
+    'store']);
 // Class Route có nhiều phương thức tĩnh: get, post,
 //put, patch, delete -> chuẩn API Resful
 
